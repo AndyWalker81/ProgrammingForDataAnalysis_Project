@@ -34,7 +34,7 @@ The project simulates a data set based on historical PGA Tour golf statistics an
 
 - Birdie average (the average number of birdies made per round played.)
 
-The R&A and USGA Distance Insights Report (2020) (https://www.usga.org/content/dam/usga/pdf/2020/distance-insights/DIPR-FINAL-2020-usga.pdf) finds that the average driving distance on the PGA Tour has shown a general increase, in particular from the early 1990s with the introduction of oversized drivers. Following this, further technological and rule innovations has led to a trend in increased distance off the tee.  
+The R&A and USGA Distance Insights Report (2020) (https://www.usga.org/content/dam/usga/pdf/2020/distance-insights/DIPR-FINAL-2020-usga.pdf) finds that the average driving distance on the PGA Tour has shown a general increase, in particular from the early 1990s with the introduction of oversized drivers. Following this, further technological and rule innovations has led to a trend in increased distance off the tee. However, the Distance Insights Report (2020) also finds that as driving distance increases, driving accuracy decreases.
 
 The project makes a comparison of the above four variables to:
 
@@ -49,25 +49,50 @@ The project is described in further detail in the notebook itself.
 
 ## Install
 
-Python distributions provide the language itself, along with the most commonly used packages and tools. These downloadable files require little configuration, work on almost all setups, and provide all the commonly used scientific python tools. [Anaconda](https://www.anaconda.com/download/) works on Windows, Mac, and Linux, provides over 1,500 Python/R packages, and is used by over 15 million people. Anaconda is best suited to beginning users; it provides a large collection of libraries all in one.Python comes with an inbuilt package management system, [pip](https://pip.pypa.io/en/stable). Pip can install, update, or delete any official package (https://scipy.org/install/).
+Python distributions contain commonly used packages and tools. [Anaconda](https://www.anaconda.com/download/) works on Windows, Mac, and Linux, provides a large collection of packages. 
 
+The notebook uses the following packages, which, if not installed on the user's computer might result in the notebook not functioning as intended:
+
+- `pandas`
+- `numpy`
+- `matplotlib.pyplot`
+- `seaborn`
+- `fitter`
+- `statistics`
+- `scipy`
+
+ If required, Python comes with an inbuilt package management system, [pip](https://pip.pypa.io/en/stable) which can install, update, or delete any official package (https://scipy.org/install/).
+
+For example, to install `fitter`:
+
+`pip install fitter` can be used. Further details are available here: https://pypi.org/project/fitter/
 
 ## Run
 
-[![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/AndyWalker81/ProgrammingForDataAnalysis_Project/blob/main/Programming_Project.ipynb)
+Users can view the notebook in static form by clicking the following badge: [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/AndyWalker81/ProgrammingForDataAnalysis_Project/blob/main/Programming_Project.ipynb)
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/AndyWalker81/ProgrammingForDataAnalysis_Project/HEAD?labpath=Programming_Project.ipynb)
-
+Users can view the notebook in dynamic form by clicking the following badge: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/AndyWalker81/ProgrammingForDataAnalysis_Project/HEAD?labpath=Programming_Project.ipynb)
 
 ## Explore
 
+First, the notebook contains an introduction and details on required installations.
+
+A set of data taken from the [PGA Tour website](https://www.pgatour.com/) consisting of the top 100 players by 2021 Fedex Cup rank is then presented. The name and data for each of the four variable is included. From these data, the `fitter` function determines the best-fit distribution for each variable. 
+
+Next, data for each of the top 100 players within each variable category was collected from the PGA Tour website for the years 1990, 2000, 2010, and 2020. For each variable, the mean for each year is calculated. The increase or decrease between the mean value for each year is then determined - this shows whether PGA Tour golfers, on average, have increased or decreased their statistics each decade.
+
+Based on the average increase or decrease for each decade determined in the last section, an estimate is made for the values of each variable in 2030.
+
+Then, the distribution for each variable is simulated using the 2030 estimated values using the `scipy` package. The size of each distribution is set to 250 in the notebook. However, the user may wish to alter this value and the option is there to do so within Section 7 of the notebook (if using a dynamic version of the notebook).
+
+A comparison is then made of each variable using the pairplot function within the `seaborn` package. 
 
 ## Credits
 
 
 ## Contact
 
-
+[Andrew Walker](mailto:G00398788@gmit.ie)
 
 
 
