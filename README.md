@@ -93,6 +93,11 @@ A comparison is then made of each variable using the pairplot function within th
 
 ## Credits
 
+Historical data was gathered from the PGA Tour's website: https://www.pgatour.com/
+
+## References
+
+
 
 ## Contact
 
