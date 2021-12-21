@@ -65,7 +65,11 @@ The notebook uses the following packages, which, if not installed on the user's 
 
 For example, to install `fitter`:
 
-`pip install fitter` can be used. Further details are available here: https://pypi.org/project/fitter/
+`pip install fitter` 
+
+Further details are available on the [fitter website](https://pypi.org/project/fitter/).
+
+Once installed, the packages must be imported; the notebook includes the necessary code to import all packages, once installed (if installation is required).
 
 ## Run
 
