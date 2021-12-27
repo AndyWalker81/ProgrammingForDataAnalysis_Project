@@ -34,7 +34,7 @@ The project simulates a data set based on historical PGA Tour golf statistics an
 
 - Birdie average (the average number of birdies made per round played.)
 
-The R&A and USGA Distance Insights Report (2020) (https://www.usga.org/content/dam/usga/pdf/2020/distance-insights/DIPR-FINAL-2020-usga.pdf) finds that the average driving distance on the PGA Tour has shown a general increase, in particular from the early 1990s with the introduction of oversized drivers. Following this, further technological and rule innovations has led to a trend in increased distance off the tee. However, the Distance Insights Report (2020) also finds that as driving distance increases, driving accuracy decreases.
+The [R&A and USGA Distance Insights Report (2020)](https://www.usga.org/content/dam/usga/pdf/2020/distance-insights/DIPR-FINAL-2020-usga.pdf) finds that the average driving distance on the PGA Tour has shown a general increase, in particular from the early 1990s with the introduction of oversized drivers. Following this, further technological and rule innovations has led to a trend in increased distance off the tee. However, the Distance Insights Report (2020) also finds that as driving distance increases, driving accuracy decreases.
 
 The project makes a comparison of the above four variables to:
 
@@ -71,11 +71,21 @@ Further details are available on the [fitter website](https://pypi.org/project/f
 
 Once installed, the packages must be imported; the notebook includes the necessary code to import all packages, once installed (if installation is required).
 
+In addition to the above packages, the project contains several .csv files containing the Fedex Cup 2021 and historical PGA Tour data. These files are as follows and are contained in a separate `data` folder:
+
+- strokes_gained.csv
+- historic_accuracy.csv
+- historic_birdies.csv
+- historic_distance.csv
+- historic_gir.csv
+
 ## Run
 
 Users can view the notebook in static form by clicking the following badge: [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/AndyWalker81/ProgrammingForDataAnalysis_Project/blob/main/Programming_Project.ipynb)
 
 Users can view the notebook in dynamic form by clicking the following badge: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/AndyWalker81/ProgrammingForDataAnalysis_Project/HEAD?labpath=Programming_Project.ipynb)
+
+
 
 ## Explore
 
@@ -83,11 +93,11 @@ First, the notebook contains an introduction and details on required installatio
 
 A set of data taken from the [PGA Tour website](https://www.pgatour.com/) consisting of the top 100 players by 2021 Fedex Cup rank is then presented. The name and data for each of the four variable is included. From these data, the `fitter` function determines the best-fit distribution for each variable. 
 
-Next, data for each of the top 100 players within each variable category was collected from the PGA Tour website for the years 1990, 2000, 2010, and 2020. For each variable, the mean for each year is calculated. The increase or decrease between the mean value for each year is then determined - this shows whether PGA Tour golfers, on average, have increased or decreased their statistics each decade.
+Next, data for each of the top 100 players within each variable category was collected from the PGA Tour website for the years 1990, 2000, 2010, and 2020. For each variable, the mean for each year is calculated. The increase or decrease between the mean value for each year is then determined - this gives an indication of whether, PGA Tour golfers, on average, have improved or worsensed each decade for these particular four stats.
 
 Based on the average increase or decrease for each decade determined in the last section, an estimate is made for the values of each variable in 2030.
 
-Then, the distribution for each variable is simulated using the 2030 estimated values using the `scipy` package. The size of each distribution is set to 250 in the notebook. However, the user may wish to alter this value and the option is there to do so within Section 7 of the notebook (if using a dynamic version of the notebook).
+Then, the distribution for each variable is simulated using the 2030 estimated values using the `scipy` package. The size of each distribution is set to 250 results in the notebook. However, the user may wish to alter this value and the option is there to do so within Section 7 of the notebook (if using a dynamic version of the notebook).
 
 A comparison is then made of each variable using the pairplot function within the `seaborn` package. 
 
@@ -97,7 +107,7 @@ Historical data was gathered from the PGA Tour's website: https://www.pgatour.co
 
 ## References
 
-
+Full references for sources used are provided within the notebook.
 
 ## Contact
 

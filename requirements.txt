@@ -1,0 +1,15 @@
+REQUIRED PACKAGES:
+pandas
+numpy
+matplotlib
+seaborn
+fitter
+statistics
+scipy
+
+REQUIRED DATA FILES:
+strokes_gained.csv
+historic_accuracy.csv
+historic_birdies.csv
+historic_distance.csv
+historic_gir.csv
