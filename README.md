@@ -22,7 +22,7 @@ Specifically, the project instructions were as follows:
 
 The instructions suggested that the `numpy.random` package was used to simulate data but, following research and experimentation, the `scipy.stats` module was considered to provide better functionality for the simulation task and was used instead. 
 
-## Project Description
+## 2. Project Description
 
 The project simulates a data set based on historical PGA Tour golf statistics and models the relationships between four variables:
 
@@ -47,7 +47,7 @@ The project is described in further detail in the notebook itself.
 
  It is considered that it might be a useful simulation for golfers to establish if distance could be considered to be more important than accuracy, or vice versa, in the context of reaching in the green in fewer shots and scoring birdies.
 
-## Install
+## 3. Install
 
 Python distributions contain commonly used packages and tools. [Anaconda](https://www.anaconda.com/download/) works on Windows, Mac, and Linux, provides a large collection of packages. 
 
@@ -61,7 +61,7 @@ The notebook uses the following packages, which, if not installed on the user's 
 - `statistics`
 - `scipy`
 
- If required, Python comes with an inbuilt package management system, [pip](https://pip.pypa.io/en/stable) which can install, update, or delete any official package (https://scipy.org/install/).
+ If required, Python comes with an inbuilt package management system, [pip](https://pip.pypa.io/en/stable) which can install, update, or delete any official package.
 
 For example, to install `fitter`:
 
@@ -79,15 +79,14 @@ In addition to the above packages, the project contains several .csv files conta
 - historic_distance.csv
 - historic_gir.csv
 
-## Run
+## 4. Run
 
 Users can view the notebook in static form by clicking the following badge: [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/AndyWalker81/ProgrammingForDataAnalysis_Project/blob/main/Programming_Project.ipynb)
 
 Users can view the notebook in dynamic form by clicking the following badge: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/AndyWalker81/ProgrammingForDataAnalysis_Project/HEAD?labpath=Programming_Project.ipynb)
 
 
-
-## Explore
+## 5. Explore
 
 First, the notebook contains an introduction and details on required installations.
 
@@ -101,15 +100,15 @@ Then, the distribution for each variable is simulated using the 2030 estimated v
 
 A comparison is then made of each variable using the pairplot function within the `seaborn` package. 
 
-## Credits
+## 6. Credits
 
 Historical data was gathered from the PGA Tour's website: https://www.pgatour.com/
 
-## References
+## 7. References
 
 Full references for sources used are provided within the notebook.
 
-## Contact
+## 8. Contact
 
 [Andrew Walker](mailto:G00398788@gmit.ie)
 
